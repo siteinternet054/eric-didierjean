@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio photo : mariage, portraits, événementiel, animaux et paysages." />
+  <meta name="theme-color" content="#0b0e14" />
+  <title>Portfolio – Eric Didierjean</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <header class="header" id="header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <div class="container nav-container">
+        <a href="index.html" class="nav-logo" aria-label="Retour à l'accueil">
+          <img src="images/logo.jpeg" alt="Eric Didierjean Photographe" />
+          <span>Eric Didierjean</span>
+        </a>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="portfolio.html" class="nav-link active">Portfolio</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+
+  <main id="main">
+    <section class="portfolio">
+      <div class="container">
+        <h1 class="section-title">Portfolio <span>photo</span></h1>
+
+        <!-- FILTRES (sans "Tous") -->
+        <div class="portfolio-filters" role="group" aria-label="Filtres portfolio">
+          <button type="button" class="filter-btn active" data-filter="mariage" aria-pressed="true">Mariage</button>
+          <button type="button" class="filter-btn" data-filter="portrait" aria-pressed="false">Portrait</button>
+          <button type="button" class="filter-btn" data-filter="creation" aria-pressed="false">Création</button>
+          <button type="button" class="filter-btn" data-filter="animaux" aria-pressed="false">Animaux</button>
+          <button type="button" class="filter-btn" data-filter="paysage" aria-pressed="false">Paysage</button>
+        </div>
+
+        <!-- GALERIE -->
+        <div class="gallery-grid" aria-label="Galerie photos">
+          <div class="gallery-item mariage"><img src="images/bouquet.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item mariage"><img src="images/mariage.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item portrait"><img src="images/dos.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item mariage"><img src="images/mariage12.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item event"><img src="images/gateau.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item event"><img src="images/coeur.jpeg" alt="" loading="lazy" decoding="async" /></div>
+
+          <div class="gallery-item animaux"><img src="images/oiseau.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/oiseau1.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/oiseau2.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/renard.jpeg" alt="" loading="lazy" decoding="async" /></div>
+
+          <div class="gallery-item paysage"><img src="images/placestan.jpeg" alt="" loading="lazy" decoding="async" /></div>
+
+          <div class="gallery-item animaux"><img src="images/abeille.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/oiseau3.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/oiseau4.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/oiseau5.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/oiseau6.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/oiseau7.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/oiseau8.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/oiseau9.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/oiseau10.jpeg" alt="" loading="lazy" decoding="async" /></div>
+
+          <div class="gallery-item animaux"><img src="images/renard1.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/renard2.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/lapin.jpeg" alt="" loading="lazy" decoding="async" /></div>
+
+          <div class="gallery-item animaux"><img src="images/ecureuil2.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/ecureuil3.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/ecureuil4.jpeg" alt="" loading="lazy" decoding="async" /></div>
+
+          <div class="gallery-item animaux"><img src="images/aigle.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/aigle1.jpeg" alt="" loading="lazy" decoding="async" /></div>
+
+          <div class="gallery-item event"><img src="images/fa1.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item event"><img src="images/fa2.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item event"><img src="images/fa3.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item event"><img src="images/fa4.jpeg" alt="" loading="lazy" decoding="async" /></div>
+
+          <div class="gallery-item paysage"><img src="images/placestan1.jpeg" alt="" loading="lazy" decoding="async" /></div>
+
+          <div class="gallery-item animaux"><img src="images/herisson.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/oiseau11.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/oiseau12.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/oiseau13.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/canard.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item animaux"><img src="images/bambi.jpeg" alt="" loading="lazy" decoding="async" /></div>
+
+          <div class="gallery-item paysage"><img src="images/placestan3.jpeg" alt="" loading="lazy" decoding="async" /></div>
+
+          <div class="gallery-item mariage"><img src="images/mariage1.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item mariage"><img src="images/mariage2.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item mariage"><img src="images/mariage3.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item mariage"><img src="images/mariage4.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item mariage"><img src="images/mariage5.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item mariage"><img src="images/mariage6.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item mariage"><img src="images/mariage7.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item mariage"><img src="images/mariage8.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item mariage"><img src="images/mariage9.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item mariage"><img src="images/mariage10.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item mariage"><img src="images/mariage11.jpeg" alt="" loading="lazy" decoding="async" /></div>
+
+          <div class="gallery-item portrait"><img src="images/portrait1.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item portrait"><img src="images/portrait2.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item portrait"><img src="images/portrait3.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item portrait"><img src="images/portrait4.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item portrait"><img src="images/portrait5.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item portrait"><img src="images/portrait6.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item portrait"><img src="images/portrait7.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item portrait"><img src="images/portrait8.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item portrait"><img src="images/portrait9.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item portrait"><img src="images/portrait10.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item portrait"><img src="images/portrait11.jpeg" alt="" loading="lazy" decoding="async" /></div>
+
+          <div class="gallery-item mariage"><img src="images/bouquet2.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item paysage"><img src="images/lieu.jpeg" alt="" loading="lazy" decoding="async" /></div>
+          <div class="gallery-item creation"><img src="images/montage.jpeg" alt="" loading="lazy" decoding="async" /></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-inner" role="dialog" aria-modal="true" aria-label="Agrandissement photo">
+      <div class="lightbox-toolbar">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+        <button class="lightbox-close" type="button" aria-label="Fermer">&times;</button>
+      </div>
+
+      <div class="lightbox-stage">
+        <img class="lightbox-img" alt="" />
+
+        <div class="lightbox-nav" aria-hidden="false">
+          <button class="lightbox-btn" type="button" data-lb="prev" aria-label="Photo précédente">‹</button>
+          <button class="lightbox-btn" type="button" data-lb="next" aria-label="Photo suivante">›</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Eric Didierjean – Photographe<br />Numéro Siret = 512278829900034</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js?v=9" defer></script>
+</body>
+</html>

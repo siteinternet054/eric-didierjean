@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Eric Didierjean, photographe. Mariage, portrait, événementiel. Un style naturel, élégant et intemporel." />
+  <meta name="theme-color" content="#0b0e14" />
+  <title>Eric Didierjean – Photographe</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <div class="container nav-container">
+        <a href="index.html" class="nav-logo" aria-label="Retour à l'accueil">
+          <img src="images/logo.jpeg" alt="Eric Didierjean Photographe" />
+          <span>Eric Didierjean</span>
+        </a>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html" class="nav-link active">Accueil</a>
+          <a href="portfolio.html" class="nav-link">Portfolio</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Backdrop mobile (menu) -->
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+
+  <main id="main">
+    <!-- HERO / PRESENTATION -->
+    <section class="hero hero-profile">
+      <div class="container hero-grid">
+        <div class="hero-photo">
+          <img src="images/presentation.jpeg" alt="Portrait d’Eric Didierjean, photographe" loading="eager" decoding="async" />
+        </div>
+
+        <div class="hero-text">
+          <h1>Eric <span>Didierjean</span></h1>
+          <h2>Photographe — Nancy & Grand Est</h2>
+
+          <p class="hero-intro">
+            J’aime créer des images <strong>naturelles</strong>, <strong>élégantes</strong> et <strong>intemporelles</strong>.
+            <br />
+            Mariage, portrait ou événement : mon objectif est simple —
+            <strong>vous mettre à l’aise</strong> et raconter une histoire vraie, avec une lumière soignée.
+          </p>
+
+          <p class="hero-muted">
+            <strong>Mon style :</strong> chaleureux, retouche discrète, approche humaine.
+            <br />
+            <strong>Mon process :</strong> échange → préparation → prise de vue → sélection → galerie privée.
+          </p>
+
+          <div class="hero-actions">
+            <a href="portfolio.html" class="cta-button">Voir le portfolio</a>
+            <a href="contact.html" class="cta-button cta-outline">Me contacter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ART DU METIER / COMPETENCES -->
+    <section class="craft reveal">
+      <div class="container">
+        <h2 class="section-title">L’art <span>du métier</span></h2>
+
+        <p class="craft-intro">
+          Une approche premium, naturelle et soignée : technique, direction et retouche au service d’un rendu authentique.
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>Mise en confiance & direction</h3>
+            <p>Je vous guide avec des consignes simples pour obtenir des images naturelles, même si vous n’êtes pas à l’aise.</p>
+            <p class="service-price">Naturel • Élégant</p>
+            <a href="portfolio.html" class="service-link">Voir des exemples</a>
+          </div>
+
+          <div class="service-card">
+            <h3>Lumière & ambiance</h3>
+            <p>Intérieur, extérieur, contre-jour : je m’adapte à chaque situation pour une lumière douce et flatteuse.</p>
+            <p class="service-price">Douceur • Cohérence</p>
+            <a href="portfolio.html" class="service-link">Découvrir le style</a>
+          </div>
+
+          <div class="service-card">
+            <h3>Composition & storytelling</h3>
+            <p>Détails, émotions, plans larges, moments clés… pour raconter votre histoire, sans forcer.</p>
+            <p class="service-price">Émotion • Narration</p>
+            <a href="portfolio.html" class="service-link">Explorer le portfolio</a>
+          </div>
+
+          <div class="service-card">
+            <h3>Retouche naturelle</h3>
+            <p>Couleurs harmonisées, peau respectée, rendu soigné sans excès.</p>
+            <p class="service-price">Propre • Intemporel</p>
+            <a href="contact.html" class="service-link">Discuter du projet</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Eric Didierjean – Photographe<br />Numéro Siret = 512278829900034</p>
+    </div>
+  </footer>
+
+  <script src="script.js?v=8" defer></script>
+</body>
+</html>
